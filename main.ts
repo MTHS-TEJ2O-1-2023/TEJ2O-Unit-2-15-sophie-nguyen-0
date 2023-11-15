@@ -34,7 +34,7 @@ input.onButtonPressed(Button.A, function () {
       basic.pause(500)
       sprite.move(1)
       stepCounter++
-      }
+    }
     sprite.turn(Direction.Right, 90)
     turningCounter++
   }
@@ -51,4 +51,3 @@ input.onButtonPressed(Button.A, function () {
     # . # . #
   `)
 })
-
