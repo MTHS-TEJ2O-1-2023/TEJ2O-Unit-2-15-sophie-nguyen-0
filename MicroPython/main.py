@@ -8,8 +8,8 @@ from microbit import *
 
 
 # variables
-y_coordinate = 0
-x_coordinate = 0
+y_coordiante = 0
+x_coordiante = 0
 
 # setup
 display.clear()
@@ -23,44 +23,44 @@ while True:
         display.clear()
 
         # reset variables
-        y_coordinate = 0
-        x_coordinate = 0
+        y_coordiante = 0
+        x_coordiante = 0
 
         # loop that moves pixel down
-        while y_coordinate <= 3:
+        while y_coordiante <= 3:
             # loop that moves pixel right
-            while x_coordinate <= 3:
+            while x_coordiante <= 3:
                 sleep(500)
 
-                display.set_pixel(x_coordinate, y_coordinate, 9)
+                display.set_pixel(x_coordiante, y_coordiante, 9)
                 sleep(500)
                 display.clear()
 
-                x_coordinate += 1
+                x_coordiante += 1
             sleep(500)
             display.clear()
-            display.set_pixel(x_coordinate, y_coordinate, 9)
-            y_coordinate += 1
+            display.set_pixel(x_coordiante, y_coordiante, 9)
+            y_coordiante += 1
         # delete pixel after it reaches (4, 3)
         display.clear()
 
         # loop that moves pixel up
-        while y_coordinate >= 0:
+        while y_coordiante >= 0:
             # loop that moves pixel left
-            while x_coordinate >= 1:
+            while x_coordiante >= 1:
                 sleep(500)
 
-                display.set_pixel(x_coordinate, y_coordinate, 9)
+                display.set_pixel(x_coordiante, y_coordiante, 9)
                 sleep(500)
                 display.clear()
 
-                x_coordinate -= 1
+                x_coordiante -= 1
 
             sleep(500)
             display.clear()
-            display.set_pixel(x_coordinate, y_coordinate, 9)
-            y_coordinate -= 1
+            display.set_pixel(x_coordiante, y_coordiante, 9)
+            y_coordiante -= 1
         # when full turn is completed
         sleep(500)
         display.clear()
-        display.show(Image.HEART)
+        display.show(Image.HEART_SMALL)
